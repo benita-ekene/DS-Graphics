@@ -1,0 +1,57 @@
+@charset "utf-8";
+
+body {
+    font: 100% Verdana, Arial, Helvetica, sans-serif;
+    margin: 0; 
+    padding: 0;
+    text-align: center; 
+    color: white;
+   background-color: black;
+}
+
+.header-img {
+  width: 70px;
+  height: 80px;
+}
+
+.array-tree-img {
+  display: flex;
+  flex-direction: row;
+}
+
+.header1 {
+  color: green;
+  font-weight: 1200;
+  font-size: 200%;
+  font-family: cursive;
+}
+
+.header2 {
+  color: blueviolet;
+  font-weight: 1200;
+  font-size: 150%;
+  font-family: cursive;
+}
+
+.header-p {
+  margin: 30px 100px;
+  font-size: larger;
+  margin-bottom: 100px;
+}
+
+.gif1 {
+  height: 200px;
+  width: 400px;
+  margin: 0px 50px ;
+}
+
+.gif2 {
+  height: 210px;
+  width: 700px;
+  margin: 0px 100px ;
+}
+
+.gif-p {
+  color: white;
+  text-decoration: none;
+}

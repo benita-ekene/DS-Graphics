@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="DSAV.css">
+  <title>Data Structure & Algorithm Visualization</title>
+  <link rel="shortcut icon" href="favicon/favicon.ico"/>
+</head>
+<body>
+  <main>
+    <section class="navbar">
+      <h1>Array (Sorting Algorithm Implementation)</h1>
+    <button id="home">Home</button>
+    <button id="about">About</button>
+    </section>
+
+    <!-- Array Section -->
+    <section class="array-VCR">
+      <input type="file" id="fileInput">
+    <input type="text" id="inputField" placeholder="Enter value">
+    <button id="pushButton">Push</button>
+    <button id="popButton">Pop</button>
+    <button id="clearButton">Clear</button>
+    </section>
+    <section>
+      <canvas id="canvas" width="1200" height="400" style="border: 1px solid black;"></canvas>
+  
+    </section>
+
+    <!-- Algorithm Section -->
+    <section class="algorithm-VCR">
+      <label for="algorithm">Algorithm:</label>
+  <select id="algorithm">
+    <option value="bubble">Bubble Sort</option>
+    <option value="insertion">Insertion Sort</option>
+    <option value="selection">Selection Sort</option>
+    <option value="merge">Merge Sort</option>
+    <option value="quick">Quick Sort</option>
+  </select>
+  <label for="order">Order:</label>
+  <select id="order">
+    <option value="ascending">Ascending</option>
+    <option value="descending">Descending</option>
+  </select>
+  <label for="speed">Speed:</label>
+  <input type="range" id="speed" min="1" max="100" value="50">
+  <button onclick="performSorting()">Start Sorting</button>
+  <button onclick="pauseSorting()">Pause Sorting</button>
+  <button onclick="repeatPrevious()">Step Back</button>
+
+  <!-- This Section displays sorted data -->
+    </section>
+    <section class="sorted-data">
+      <div id="timer"></div>
+      <div id="variablesWrapper">
+        <div id="variablesBefore"></div>
+        <div id="variablesAfter"></div>
+      </div>
+    </section>
+  </main>
+  <script src="array.js"></script>
+</body>
+</html>
