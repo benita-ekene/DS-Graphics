@@ -41,14 +41,26 @@ body {
 
 .gif1 {
   height: 200px;
-  width: 400px;
+  width: 200px;
   margin: 0px 50px ;
 }
 
 .gif2 {
   height: 210px;
-  width: 700px;
-  margin: 0px 100px ;
+  width: 300px;
+  margin: 0px 50px ;
+}
+
+.gif3 {
+  height: 200px;
+  width: 200px;
+  margin: 0px 50px ;
+}
+
+.gif4 {
+  height: 210px;
+  width: 200px;
+  margin: 0px 50px ;
 }
 
 .gif-p {
