@@ -254,7 +254,7 @@ class SortingVisualizer {
     }
   }
 
-  async enterData() {
+  enterData() {
     const inputData = document.getElementById('inputData').value;
     if (inputData) {
       const value = parseInt(inputData);
@@ -262,12 +262,8 @@ class SortingVisualizer {
         this.values.push(value);
         this.drawBars();
         document.getElementById('inputData').value = '';
-        this.performSorting(); // Call the sorting method after manual data input
       }
     }
-
-    // If data entry is empty or not a valid number, show an error message.
-    document.getElementById('variablesAfter').innerText = 'Invalid input. Please enter a number.';
   }
 
   clearCanvas() {
