@@ -34,7 +34,7 @@ const canvas = document.getElementById("stackCanvas");
 const ctx = canvas.getContext("2d");
 
 // const placeholderText = "Enter a value, use the push operation to add the value to the stack, and use the pop operation to remove a value from the stack.";
-const placeholderText = "ENTER DATA TO VISUALIZE STACK DATA STRUCTURE HERE.";
+const placeholderText = "VISUALIZE STACK DATA STRUCTURE HERE.";
 
 function drawStack() {
   ctx.clearRect(0, 0, canvas.width, canvas.height);
@@ -48,18 +48,33 @@ function drawStack() {
     // Draw the placeholder text
     ctx.fillStyle = "blue";
     ctx.font = "40px cursive";
-    ctx.fillText(placeholderText, startX, startY - 150);
+    ctx.fillText(placeholderText, startX, startY - 50);
   } else {
     // Draw the stack
     stack.display().forEach((item, index) => {
-      const barWidth = item * 10;
+      const barWidth = item * 3;
       const x = startX;
       const y = startY - index * (barHeight + spacing);
       ctx.fillStyle = "blue";
       ctx.fillRect(x, y, barWidth, barHeight);
       ctx.fillStyle = "white";
-      ctx.fillText(item, x + 5, y + barHeight / 2 + 5);
+    const fontSize = 20; // Set the reduced font size
+      ctx.font = `${fontSize}px Arial`;
+      ctx.fillText(item, x + 4, y + barHeight / 1.5 + 2);
     });
+
+    // stack.display().forEach((item, index) => {
+    //   const barWidth = item * 2;
+    //   const x = startX;
+    //   const y = startY - index * (barHeight + spacing);
+    //   ctx.fillStyle = "blue";
+    //   ctx.fillRect(x, y, barWidth, barHeight);
+    //   ctx.fillStyle = "white";
+    //   const fontSize = 12; // Set the reduced font size
+    //   ctx.font = `${fontSize}px Arial`; // Set the font size and type
+    //   ctx.fillText(item, x + 10, y + barHeight / 1 + 2);
+    // });
+    
 
     const pointerY = startY - stack.display().length * (barHeight + spacing);
     ctx.beginPath();
