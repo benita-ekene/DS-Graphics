@@ -20,7 +20,7 @@ body {
 }
 
 .header1 {
-  color: green;
+  color: rgb(106, 245, 106);
   font-weight: 1200;
   font-size: 200%;
   font-family: cursive;
@@ -42,25 +42,25 @@ body {
 .gif1 {
   height: 200px;
   width: 200px;
-  margin: 0px 50px ;
+  margin: 0px 80px ;
 }
 
 .gif2 {
-  height: 210px;
+  height: 230px;
   width: 300px;
-  margin: 0px 50px ;
+  margin: 0px 80px ;
 }
 
 .gif3 {
-  height: 200px;
+  height: 210px;
   width: 200px;
-  margin: 0px 50px ;
+  margin: 0px 80px ;
 }
 
 .gif4 {
   height: 210px;
   width: 200px;
-  margin: 0px 50px ;
+  margin: 0px 150px ;
 }
 
 .gif-p {
